@@ -3,13 +3,15 @@
 Seguindo tutorial do [Link](https://speedscale.com/2022/02/17/using-grpc-with-python/)
 
 ## Fluxo
+![](diagram/Diagram.jpg)
+
 1. Instalar dependências do **requirements.txt**.
-2. Criar arquivo **.proto**. (Exemplo: service.proto)
+2. Criar arquivo **.proto**. (Exemplo: crypto_service.proto)
 3. Colocar o contrato dentro do arquivo.
 4. Executar no terminal o comando
 
 ``` shell
-python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. service.proto
+python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. config/crypto_service.proto
 ```
 
 Com isso, serão gerados dois arquivos:
